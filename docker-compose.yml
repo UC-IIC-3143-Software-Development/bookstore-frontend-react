@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+
+  structurizr:
+    build: .
+    ports:
+      - '8082:8080'
+    volumes:
+      - ./docs/architecture:/usr/local/structurizr
